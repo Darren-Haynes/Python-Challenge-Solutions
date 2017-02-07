@@ -6,7 +6,7 @@ from collections import OrderedDict
 from data import data_mess
 
 
-def main():
+def get_solution():
     """Use ordered dict to store frequency of characters found in 'data_mess'.
        Those with frequency of just 1 show the message"""
 
@@ -25,7 +25,20 @@ def main():
         if frequency[key] == 1:
             message += key
 
-    print message
+    return message
+
+
+def main():
+    answer = get_solution()
+    print answer
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
